@@ -161,7 +161,7 @@ const Copilot: React.FC<CopilotProps> = ({ onAddToComposer }) => {
         <div className="h-full flex flex-col space-y-4">
           {messages.length === 0 && (
             <div className="w-full h-full flex flex-col justify-center items-center">
-              <h1 className="font-semibold">Hi, I'm Fin AI Copolit </h1>
+              <h1 className="font-semibold">Hi, I'm Fin AI Copilot </h1>
               <p className="text-sm text-gray-600">
                 Ask me anything about the conversation.
               </p>

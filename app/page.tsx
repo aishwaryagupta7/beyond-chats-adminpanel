@@ -32,7 +32,7 @@ export default function Home() {
     <div className={` h-full flex flex-col md:flex-row overflow-hidden p-2 gap-2 ${
       darkMode ? 'bg-gray-900' : 'bg-gray-200'
     }`}>
-      <div className={`backdrop-blur-lg  p-3 w-full md:w-1/5 ${
+      <div className={` rounded-xl  p-3 w-full md:w-1/5 ${
         darkMode ? 'bg-gray-800' : 'bg-white'
       }`}>
         <InboxSidebar 
@@ -42,7 +42,7 @@ export default function Home() {
         />
       </div>
 
-      <div className={`flex-1 flex flex-col p-3  w-full ${
+      <div className={`flex-1 flex flex-col p-3 rounded-xl  w-full ${
         darkMode ? 'bg-gray-800' : 'bg-white'
       }`}>
         {selectedConversationId ? (
@@ -56,18 +56,18 @@ export default function Home() {
             onCopilotTextUsed={handleCopilotTextUsed}
           />
         ) : (
-          <div className={`flex-1 flex items-center justify-center ${
+          <div className={`flex-1 flex  items-center justify-center ${
             darkMode ? 'text-gray-400' : 'text-gray-500'
           }`}>
             <div className="text-center">
               <h3 className="text-lg font-medium mb-2">No conversation selected</h3>
-              <p>Choose a conversation from the sidebar to start chatting</p>
+              <p>Choose a conversation from the inbox to start chatting</p>
             </div>
           </div>
         )}
       </div>
 
-      <div className={` w-full md:w-1/4 ${
+      <div className={` w-full md:w-1/4 rounded-xl ${
         darkMode ? 'bg-gray-800' : 'bg-white'
       }`}>
         <CopilotSection onAddToComposer={handleAddToComposer} />
